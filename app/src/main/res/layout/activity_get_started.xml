@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/ic_toktown" />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:padding="@dimen/_4sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_settings"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginHorizontal="@dimen/_12sdp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black_alpha_87"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="@dimen/_25sdp"
+            android:gravity="center"
+            android:text="Start a Meeting"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black_alpha_87"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="@dimen/_12sdp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Start or join the meeting on the go."
+            android:layout_height="wrap_content">
+        </TextView>
+        <ImageView
+            android:layout_marginTop="@dimen/_12sdp"
+            android:padding="@dimen/_8sdp"
+            android:src="@drawable/ic_start_meeting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_290sdp">
+
+
+        </ImageView>
+    </LinearLayout>
+    <ImageView
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="end"
+        android:id="@+id/ivJoinMeetingIcon"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/ic_down_arrow"/>
+
+
+
+
+
+
+
+</LinearLayout>

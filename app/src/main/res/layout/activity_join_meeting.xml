@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:id="@+id/ivBackIcon"
+                    android:src="@drawable/ic_back_icon"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_height="@dimen/_35sdp">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Tok Town"
+                    android:textColor="@color/black_alpha_87"
+                    android:textSize="@dimen/_18sdp" />
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:id="@+id/ivClose"
+                    android:src="@drawable/ic_close"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_11sdp"
+                    android:layout_height="@dimen/_35sdp">
+                </ImageView>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/_95sdp"
+                    android:id="@+id/ivJoinMeetingIcon"
+                    android:padding="@dimen/_4sdp"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:src="@drawable/ic_join_meeting"
+                    android:layout_height="@dimen/_95sdp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Join"
+                        android:textColor="@color/black_alpha_87"
+                        android:textSize="@dimen/_32sdp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="The"
+                        android:textColor="@color/black_alpha_87"
+                        android:textSize="@dimen/_32sdp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Meeting"
+                    android:textColor="@color/black_alpha_87"
+                    android:textSize="@dimen/_32sdp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black_alpha_87"
+                    android:text="Company Name"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:paddingHorizontal="@dimen/_2sdp"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:inputType="text"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/black_alpha_87"
+                    android:id="@+id/edtCompanyName"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginHorizontal="@dimen/_25sdp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black_alpha_87"
+                    android:text="Organization Id"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:layout_marginVertical="@dimen/_12sdp"
+                    android:paddingHorizontal="@dimen/_2sdp"
+                    android:paddingVertical="@dimen/_2sdp"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/black_alpha_87"
+                    android:id="@+id/edtOrganizationId"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="@dimen/_45sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/background_button_round"
+                    android:paddingVertical="@dimen/_4sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:text="NEXT"
+                    android:textColor="@color/white_alpha_90" />
+
+
+            </RelativeLayout>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

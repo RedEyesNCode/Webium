@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2015 The Chromium Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<!-- The toolbar containing the URL bar, back button, and NTP button.
+-->
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<org.chromium.chrome.browser.toolbar.top.ToolbarPhone
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height_no_shadow" >
+
+    <org.chromium.chrome.browser.toolbar.HomeButton
+        android:id="@+id/home_button"
+        style="@style/ToolbarButton"
+        android:src="@drawable/btn_back"
+        android:contentDescription="@string/accessibility_toolbar_btn_home"
+        android:visibility="visible"
+        app:tint="@color/dark_mode_tint" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:padding="@dimen/_11sdp"
+            android:src="@drawable/ic_close"></ImageView>
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:id="@+id/ivClose"
+            android:src="@drawable/ic_launcher_toktown"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/tvHeading"
+            android:padding="@dimen/_4sdp"
+            android:layout_height="@dimen/_35sdp">
+        </ImageView>
+        <TextView
+            android:id="@+id/tvHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Tok Town"
+            android:textColor="@color/black_alpha_87"
+            android:textSize="@dimen/_18sdp" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:padding="@dimen/_11sdp"
+            android:src="@drawable/ic_close"></ImageView>
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <org.chromium.chrome.browser.omnibox.LocationBarPhone
+            android:id="@+id/location_bar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/toolbar_buttons"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end" >
+
+            <ViewStub
+                android:id="@+id/experimental_button_stub"
+                android:inflatedId="@+id/experimental_toolbar_button"
+                android:layout="@layout/experimental_toolbar_button"
+                style="@style/ToolbarButton"
+                android:paddingStart="8dp"
+                android:visibility="gone" />
+
+            <org.chromium.chrome.browser.toolbar.top.ToggleTabStackButton
+                android:id="@+id/tab_switcher_button"
+                style="@style/ToolbarButton"
+                android:paddingStart="8dp"
+                android:layout_gravity="top"
+                android:contentDescription="@string/accessibility_toolbar_btn_tabswitcher_toggle_default" />
+
+            <include layout="@layout/menu_button"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</org.chromium.chrome.browser.toolbar.top.ToolbarPhone>
+</RelativeLayout>
